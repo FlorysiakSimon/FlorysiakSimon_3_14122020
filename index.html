@@ -15,25 +15,92 @@
 <main>
 <section class="reserve">
     <div class="reserveLocation">
-        <p><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
+        <p class="reserveLocationText"><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
     </div>
     <div class="reserveText">
-        <h2>Réservez le menu qui vous convient</h2>
-        <p>Découvrez des restaurants d'exception,séléctionnés par nos soins.</p>
+        <h2 class="reserveTextTitle">Réservez le menu qui vous convient</h2>
+        <p class="reserveTextText">Découvrez des restaurants d'exception,séléctionnés par nos soins.</p>
         <form>
-            <button formaction="#">Explorer nos restaurants</button>
+            <button class="reserveTextButton" formaction="#">Explorer nos restaurants</button>
         </form>
     </div>
 </section>
+<section class="operation">
+    <h2 class="operationTitle">Fonctionnement</h2>
+    <div class="operationList">
+        <div class="operationListButton">
+            <i class="fas fa-mobile-alt"></i><span class="operationListButtonText">Choisissez un restaurant</span>
+        </div>
+        <div class="operationListButton">
+            <i class="fas fa-list"></i><span class="operationListButtonText">Composez votre menu</span>
+        </div>
+        <div class="operationListButton">
+            <i class="fas fa-mobile-alt"></i><span class="operationListButtonText">Dégustez au restaurant</span>
+        </div>
+    </div>
+</section>
+<section class="restaurant">
+    <h2 class="restaurantTitle">Restaurants</h2>
 
+    <a href="#">
+        <article class="restaurantItem">
+            <img class="restaurantItemImg" src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/>
+            <div class="restaurantItemInfo">
+                <h2 class="restaurantItemInfoTitle">La palette du goût</h2>
+                <p class="restaurantItemInfoText">
+                    Ménilmontant 
+                </p>
+                <span class="restaurantItemInfoNew">Nouveau</span>
+                <i class="far fa-heart restaurantItemInfoIcon"></i>
+            </div>
+        </article>
+    </a>
+    <a href="#">
+        <article class="restaurantItem">
+            <img class="restaurantItemImg" src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"/>
+            <div class="restaurantItemInfo">
+                <h2 class="restaurantItemInfoTitle">La note enchantée</h2>
+                <p class="restaurantItemInfoText">
+                    Charonne 
+                </p>
+                <span class="restaurantItemInfoNew">Nouveau</span>
+                <i class="far fa-heart restaurantItemInfoIcon"></i>
+            </div>
+        </article>
+    </a>
+    <a href="#">
+        <article class="restaurantItem">
+            <img class="restaurantItemImg" src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française"/>
+            <div class="restaurantItemInfo">
+                <h2 class="restaurantItemInfoTitle">À la française</h2>
+                <p class="restaurantItemInfoText">
+                    Cité Rouge
+                </p>
+                <i class="far fa-heart restaurantItemInfoIcon"></i>
+            </div>
+        </article>
+    </a>
+    <a href="#">
+        <article class="restaurantItem">
+            <img class="restaurantItemImg" src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"/>
+            <div class="restaurantItemInfo">
+                <h2 class="restaurantItemInfoTitle">Le délice des sens</h2>
+                <p class="restaurantItemInfoText">
+                    Folie-Méricourt 
+                </p>
+                <i class="far fa-heart restaurantItemInfoIcon"></i>
+            </div>
+        </article>
+    </a>
+</section>
 
 </main>
-<footer>
-    <h3>ohmyfood</h3>
-    <a href="#" clas=""><i class="fas fa-utensils"></i> Proposer un restaurant</a>
-    <a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a>
-    <a href="#">Mentions légales</a>
-    <a href="#">Contact</a>
+<footer class="footer">
+    <h3 class="footerTitle">ohmyfood</h3>
+    <a href="#" class="footerLink"><i class="fas fa-utensils"></i> Proposer un restaurant</a>
+    <a href="#" class="footerLink"><i class="fas fa-hands-helping"></i> Devenir partenaire</a>
+    <a href="#" class="footerLink">Mentions légales</a>
+    <a href="#" class="footerLink">Contact</a>
 </footer>
 </body>
 </html>
