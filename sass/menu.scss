@@ -1,0 +1,71 @@
+/*HEADER*/
+
+.header {
+  position: relative;
+  &Arrow {
+    position: absolute;
+    float: left;
+    top: 40px;
+    left: 60px;
+    scale: 2;
+    color: #353535;
+  }
+}
+
+/*restaurant*/
+
+.restaurantImg {
+  object-fit: cover;
+  max-width: 560px;
+}
+
+/*menu*/
+
+.menu {
+  background-color: $grey-background;
+  border-radius: 35px 35px 0px 0px;
+  &Name {
+    padding: 1em;
+    font-size: 34px;
+    &Icon {
+    }
+  }
+  &Title {
+    text-transform: uppercase;
+    border-bottom: 5px solid $tertiary;
+    width: 60px;
+    margin-left: 1em;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  &Plat {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;
+    margin: 1em;
+    &Title {
+      padding: 0.5em 0em 0em 0.5em;
+      margin: 2px 0px;
+    }
+    &Text {
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+    &Prix {
+      color: gray;
+      position: absolute;
+      bottom: 13px;
+      right: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+.purchase {
+  @extend .reserveTextButton;
+  width: 250px;
+}

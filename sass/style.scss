@@ -4,6 +4,8 @@ $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
 $grey-background: #f6f6f6;
+@import "animation.scss";
+@import "menu.scss";
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
@@ -19,8 +21,11 @@ a {
 
 /*@media screen and (max-width: 618px) { */
 /*HEADER*/
-header {
+.header {
   text-align: center;
+  &Logo {
+    margin: 2em 0em;
+  }
 }
 /*SECTION RESERVE*/
 .reserve {

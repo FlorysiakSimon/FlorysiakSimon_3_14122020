@@ -1,5 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*Restaurant*/
+.restaurantItem:hover {
+  -ms-transform: scale(1.02);
+  /* IE 9 */
+  -webkit-transform: scale(1.02);
+  /* Safari 3-8 */
+  transform: scale(1.02);
+}
+
+.restaurantItemInfoIcon:hover {
+  color: #ff79da;
+}
+
+/*HEADER*/
+.header {
+  position: relative;
+}
+.headerArrow {
+  position: absolute;
+  float: left;
+  top: 40px;
+  left: 60px;
+  scale: 2;
+  color: #353535;
+}
+
+/*restaurant*/
+.restaurantImg {
+  object-fit: cover;
+  max-width: 560px;
+}
+
+/*menu*/
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 35px 35px 0px 0px;
+}
+.menuName {
+  padding: 1em;
+  font-size: 34px;
+}
+.menuTitle {
+  text-transform: uppercase;
+  border-bottom: 5px solid #99e2d0;
+  width: 60px;
+  margin-left: 1em;
+  font-size: 20px;
+  font-weight: 100;
+}
+.menuPlat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 16px #0000002e;
+  margin: 1em;
+}
+.menuPlatTitle {
+  padding: 0.5em 0em 0em 0.5em;
+  margin: 2px 0px;
+}
+.menuPlatText {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.menuPlatPrix {
+  color: gray;
+  position: absolute;
+  bottom: 13px;
+  right: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.purchase {
+  width: 250px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
@@ -17,8 +96,11 @@ a {
 
 /*@media screen and (max-width: 618px) { */
 /*HEADER*/
-header {
+.header {
   text-align: center;
+}
+.headerLogo {
+  margin: 2em 0em;
 }
 
 /*SECTION RESERVE*/
@@ -50,7 +132,7 @@ header {
   font-weight: 100;
   font-size: 20px;
 }
-.reserveTextButton {
+.reserveTextButton, .purchase {
   background-color: #ff79da;
   color: white;
   border: none;
