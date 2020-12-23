@@ -1,12 +1,21 @@
+/*OPERATION*/
+
+.operationListButton:hover {
+  background-color: rgba(147, 86, 220, 0.1);
+  & i {
+    color: $primary;
+  }
+}
 /*Restaurant*/
 
 .restaurant {
   &Item:hover {
-    -ms-transform: scale(1.02); /* IE 9 */
-    -webkit-transform: scale(1.02); /* Safari 3-8 */
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
     transform: scale(1.02);
   }
 }
 .restaurantItemInfoIcon:hover {
-  color: $secondary;
+}
+.restaurantItemInfoIconHidden::hover {
 }

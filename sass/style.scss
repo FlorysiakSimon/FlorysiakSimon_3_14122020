@@ -147,6 +147,10 @@ a {
         bottom: 3.6em;
         right: 40px;
         scale: 2;
+        display: block;
+        &Hidden {
+          @extend .restaurantItemInfoIcon;
+        }
       }
     }
   }
