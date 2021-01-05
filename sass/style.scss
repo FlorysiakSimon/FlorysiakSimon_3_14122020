@@ -19,6 +19,38 @@ a {
   color: inherit;
 }
 
+/*PRELOADER*/ /*
+.lds-dual-ring {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  cursor: wait;
+  display: inline-block;
+}
+.lds-dual-ring:after {
+  content: " ";
+
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fcf;
+  border-color: $primary transparent $secondary transparent;
+  animation: preloader 1.2s linear infinite;
+}
+@keyframes preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}*/
+
 /*@media screen and (max-width: 618px) { */
 /*HEADER*/
 .header {
@@ -54,7 +86,12 @@ a {
     font-size: 20px;
   }
   &Button {
-    background-color: $secondary;
+    background: rgb(212, 102, 199);
+    background: linear-gradient(
+      174deg,
+      rgba(212, 102, 199, 1) 37%,
+      rgba(159, 90, 220, 1) 100%
+    );
     color: white;
     border: none;
     border-radius: 35px;
@@ -62,7 +99,7 @@ a {
     font-size: 20px;
     box-shadow: 0 0 16px #09090945;
     cursor: pointer;
-    margin: 2em;
+    margin: 2em auto 2em auto;
   }
 }
 
@@ -72,9 +109,15 @@ a {
     margin-left: 1em;
   }
   &List {
-    max-width: 300px;
+    display: flex;
+    flex-direction: column;
     margin: auto;
+    padding: 1em 0em 2em 0em;
     &Button {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 80%;
       padding: 1em;
       font-size: 20px;
       box-shadow: 0 0 16px #09090945;
@@ -82,13 +125,23 @@ a {
       text-align: center;
       border-radius: 20px;
       margin: 1em auto 1em;
+      &Number {
+        background-color: $primary;
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        color: white;
+        margin-left: -30px;
+        margin-right: 15px;
+      }
       &Text {
         font-weight: bold;
         font-size: 18px;
       }
       i {
         color: gray;
-        float: left;
+        margin-right: 30px;
+        width: 30px;
       }
     }
   }

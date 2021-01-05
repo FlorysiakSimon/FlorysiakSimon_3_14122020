@@ -16,7 +16,9 @@
 
 .restaurantImg {
   object-fit: cover;
-  max-width: 560px;
+  width: 100%;
+  height: 400px;
+  margin-bottom: -55px;
 }
 
 /*menu*/
@@ -24,11 +26,17 @@
 .menu {
   background-color: $grey-background;
   border-radius: 35px 35px 0px 0px;
+  position: relative;
+  padding-bottom: 2em;
   &Name {
     padding: 1em;
     font-size: 34px;
-    &Icon {
-    }
+    display: flex;
+    justify-content: space-between;
+  }
+  &Section {
+    display: flex;
+    flex-direction: column;
   }
   &Title {
     text-transform: uppercase;
@@ -46,26 +54,51 @@
     border-radius: 20px;
     box-shadow: 0 0 16px #0000002e;
     margin: 1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
     &Title {
       padding: 0.5em 0em 0em 0.5em;
       margin: 2px 0px;
     }
-    &Text {
-      margin-left: 10px;
-      margin-top: 5px;
+    &Description {
+      display: flex;
+      justify-content: space-between;
+      &Text {
+        margin-left: 10px;
+        margin-top: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      &Prix {
+        color: gray;
+        /*position: absolute;
+        bottom: 13px;
+        right: 30px;*/
+        margin-right: 2em;
+        font-size: 20px;
+        font-weight: bold;
+      }
     }
-    &Prix {
-      color: gray;
+    &Animation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $tertiary;
       position: absolute;
-      bottom: 13px;
-      right: 30px;
-      font-size: 20px;
-      font-weight: bold;
+      right: 0;
+      height: 100%;
+      width: 20%;
+      border-radius: 0px 20px 20px 0px;
+      & i {
+        color: white;
+        font-size: 35px;
+      }
     }
   }
 }
 
 .purchase {
   @extend .reserveTextButton;
-  width: 250px;
+  display: block;
+  width: 220px;
 }
