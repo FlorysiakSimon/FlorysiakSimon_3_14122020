@@ -3,9 +3,10 @@
   color: $primary;
 }
 /*SECTION RESERVE*/
-/*.reserveTextButton:hover {
-  opacity: 0.9;
-}*/
+.reserveTextButton:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 16px #0909096b;
+}
 
 /*OPERATION*/
 
@@ -24,7 +25,32 @@
     transform: scale(1.02);
   }
 }
-.restaurantItemInfoIcon:hover {
+/*ANIM COEUR */
+.restaurantItemInfoIcon > .heartEmpty + .heartFull,
+.restaurantItemInfoIcon:hover > .heartEmpty {
+  display: none;
 }
-.restaurantItemInfoIconHidden::hover {
+.restaurantItemInfoIcon:hover > .heartEmpty + .heartFull {
+  display: inherit;
+}
+
+/*MENU*/
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+    transform: translateY(-10px);
+  }
+}
+.load1 {
+  animation-delay: 200ms;
+}
+.load2 {
+  animation-delay: 400ms;
+}
+.load3 {
+  animation-delay: 600ms;
 }
