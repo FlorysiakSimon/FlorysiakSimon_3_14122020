@@ -1,39 +1,23 @@
 /*HEADER*/
-.headerArrow:hover {
-  color: $primary;
-}
+
 /*SECTION RESERVE*/
-.reserveTextButton:hover {
-  filter: brightness(1.1);
-  box-shadow: 0 0 16px #0909096b;
-}
 
 /*OPERATION*/
 
-.operationListButton:hover {
-  background-color: rgba(147, 86, 220, 0.1);
-  & i {
-    color: $primary;
-  }
-}
 /*Restaurant*/
 
-.restaurant {
-  &Item:hover {
-    -ms-transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    transform: scale(1.02);
+/*ANIM COEUR */
+
+.restaurantItemInfoIcon {
+  &:hover {
+    .heartEmpty {
+      opacity: 0;
+    }
+    .heartFull {
+      opacity: 1;
+    }
   }
 }
-/*ANIM COEUR */
-.restaurantItemInfoIcon > .heartEmpty + .heartFull,
-.restaurantItemInfoIcon:hover > .heartEmpty {
-  display: none;
-}
-.restaurantItemInfoIcon:hover > .heartEmpty + .heartFull {
-  display: inherit;
-}
-
 /*MENU*/
 
 @keyframes fadein {
@@ -54,3 +38,5 @@
 .load3 {
   animation-delay: 600ms;
 }
+
+/**/

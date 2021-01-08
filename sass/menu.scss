@@ -9,6 +9,9 @@
     left: 60px;
     scale: 2;
     color: #353535;
+    &:hover {
+      color: $primary;
+    }
   }
 }
 
