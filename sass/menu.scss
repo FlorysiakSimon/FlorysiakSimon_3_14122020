@@ -106,7 +106,7 @@
       }
     }
     &Animation {
-      display: flex;
+      display: none;
       align-items: center;
       justify-content: center;
       background-color: $tertiary;
@@ -121,6 +121,11 @@
       }
     }
   }
+}
+
+.menuPlat:hover .menuPlatAnimation {
+  display: flex;
+  color: red;
 }
 
 .purchase {

@@ -164,7 +164,7 @@
   font-weight: bold;
 }
 .menuPlatAnimation {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   background-color: #99e2d0;
@@ -177,6 +177,11 @@
 .menuPlatAnimation i {
   color: white;
   font-size: 35px;
+}
+
+.menuPlat:hover .menuPlatAnimation {
+  display: flex;
+  color: red;
 }
 
 .purchase {
@@ -299,7 +304,6 @@ a {
 }
 .operationList {
   display: flex;
-  flex-direction: column;
   margin: auto;
   padding: 1em 0em 2em 0em;
 }
@@ -307,7 +311,8 @@ a {
   position: relative;
   display: flex;
   align-items: center;
-  width: 80%;
+  /* width: 80%; */
+  width: 350px;
   padding: 1em;
   font-size: 20px;
   box-shadow: 0 0 16px #09090945;
@@ -344,6 +349,8 @@ a {
 /*RESTAURANT*/
 .restaurant {
   background-color: #f6f6f6;
+}
+.restaurantContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -351,6 +358,7 @@ a {
 .restaurantTitle {
   flex-basis: 100%;
   margin-left: 1em;
+  padding-top: 1em;
 }
 .restaurantItem {
   position: relative;
@@ -432,6 +440,28 @@ a {
 .footer i {
   margin-right: 10px;
   width: 14px;
+}
+
+/* RESPONSIV */
+@media screen and (max-width: 1250px) {
+  .operationList {
+    flex-direction: column;
+  }
+  .operationListButton {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 864px) {
+  .operationList {
+    flex-direction: column;
+  }
+
+  .restaurantContainer {
+    flex-direction: column;
+  }
+  .restaurantItem {
+    width: 95%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

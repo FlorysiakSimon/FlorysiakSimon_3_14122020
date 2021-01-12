@@ -117,7 +117,6 @@ a {
   }
   &List {
     display: flex;
-    flex-direction: column;
     margin: auto;
     padding: 1em 0em 2em 0em;
 
@@ -125,7 +124,9 @@ a {
       position: relative;
       display: flex;
       align-items: center;
-      width: 80%;
+      /* width: 80%; */
+      width: 350px;
+
       padding: 1em;
       font-size: 20px;
       box-shadow: 0 0 16px #09090945;
@@ -164,12 +165,16 @@ a {
 /*RESTAURANT*/
 .restaurant {
   background-color: $grey-background;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+
+  &Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   &Title {
     flex-basis: 100%;
     margin-left: 1em;
+    padding-top: 1em;
   }
   &Item {
     position: relative;
@@ -235,6 +240,7 @@ a {
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
+
 /*FOOTER*/
 
 .footer {
@@ -253,5 +259,34 @@ a {
   i {
     margin-right: 10px;
     width: 14px;
+  }
+}
+
+/* RESPONSIV */
+
+@media screen and (max-width: 1250px) {
+  .operation {
+    &List {
+      flex-direction: column;
+      &Button {
+        width: 80%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 864px) {
+  .operation {
+    &List {
+      flex-direction: column;
+    }
+  }
+
+  .restaurant {
+    &Container {
+      flex-direction: column;
+    }
+    &Item {
+      width: 95%;
+    }
   }
 }
