@@ -11,7 +11,7 @@
   0% {
     top: 0;
   }
-  80% {
+  50% {
     top: 0;
   }
   100% {
@@ -60,6 +60,28 @@
 }
 .load3 {
   animation-delay: 600ms;
+}
+
+.menuPlat:hover .menuPlatAnimation i {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.menuPlat:hover .menuPlatAnimation {
+  transform: translateX(-100%);
+}
+.menuPlat:hover .menuPlatDescriptionPrix {
+  transform: translateX(-100%);
+}
+.menuPlat:hover .menuPlatDescriptionText {
+  width: 50%;
+  transition: all 330ms;
+}
+.menuPlat:hover .menuPlatTitle {
+  width: 80%;
+  transition: all 330ms;
 }
 
 /**/

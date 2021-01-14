@@ -13,7 +13,7 @@
   0% {
     top: 0;
   }
-  80% {
+  50% {
     top: 0;
   }
   100% {
@@ -56,6 +56,32 @@
 
 .load3 {
   animation-delay: 600ms;
+}
+
+.menuPlat:hover .menuPlatAnimation i {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.menuPlat:hover .menuPlatAnimation {
+  transform: translateX(-100%);
+}
+
+.menuPlat:hover .menuPlatDescriptionPrix {
+  transform: translateX(-100%);
+}
+
+.menuPlat:hover .menuPlatDescriptionText {
+  width: 50%;
+  transition: all 330ms;
+}
+
+.menuPlat:hover .menuPlatTitle {
+  width: 80%;
+  transition: all 330ms;
 }
 
 /**/
@@ -101,6 +127,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.menuNameIcons {
+  cursor: pointer;
+}
 .menuNameIcons i {
   position: absolute;
   font-size: 2em;
@@ -143,45 +172,49 @@
 .menuPlatTitle {
   padding: 0.5em 0em 0em 0.5em;
   margin: 2px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menuPlatDescription {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menuPlatDescriptionText {
   margin-left: 10px;
   margin-top: 5px;
   text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
+  width: 80%;
 }
 .menuPlatDescriptionPrix {
   color: gray;
-  /*position: absolute;
-  bottom: 13px;
-  right: 30px;*/
-  margin-right: 2em;
+  width: 20%;
   font-size: 20px;
   font-weight: bold;
+  transition: transform 0.5s ease;
 }
 .menuPlatAnimation {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   background-color: #99e2d0;
   position: absolute;
-  right: 0;
+  right: -20%;
   height: 100%;
   width: 20%;
   border-radius: 0px 20px 20px 0px;
+  transition: transform 0.5s ease;
 }
 .menuPlatAnimation i {
   color: white;
   font-size: 35px;
-}
-
-.menuPlat:hover .menuPlatAnimation {
-  display: flex;
-  color: red;
+  transition: transform 0.5s ease;
 }
 
 .purchase {
