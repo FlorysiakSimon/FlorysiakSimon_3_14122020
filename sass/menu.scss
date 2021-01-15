@@ -5,9 +5,9 @@
   &Arrow {
     position: absolute;
     float: left;
-    top: 40px;
+    top: 32px;
     left: 60px;
-    scale: 2;
+    font-size: 2em;
     color: #353535;
     &:hover {
       color: $primary;
@@ -86,9 +86,11 @@
     &Title {
       padding: 0.5em 0em 0em 0.5em;
       margin: 2px 0px;
+      width: 100%;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      transition: width 0.5s;
     }
     &Description {
       display: flex;
@@ -97,6 +99,7 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      transition: width 0.5s;
       &Text {
         margin-left: 10px;
         margin-top: 5px;
@@ -104,6 +107,7 @@
         white-space: nowrap;
         overflow: hidden;
         width: 80%;
+        transition: width 0.5s;
       }
       &Prix {
         color: gray;
@@ -139,7 +143,7 @@
   width: 220px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1224px) {
   .menu {
     flex-direction: column;
   }

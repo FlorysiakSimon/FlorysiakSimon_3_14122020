@@ -20,6 +20,7 @@
     display: none;
   }
 }
+
 /*HEADER*/
 
 /*SECTION RESERVE*/
@@ -70,18 +71,24 @@
   transform: rotate(360deg);
 }
 .menuPlat:hover .menuPlatAnimation {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 .menuPlat:hover .menuPlatDescriptionPrix {
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-80%);
+  -moz-transform: translateX(-80%);
+  -o-transform: translateX(-80%);
+  -ms-transform: translateX(-80%);
+  transform: translateX(-80%);
 }
 .menuPlat:hover .menuPlatDescriptionText {
-  width: 50%;
-  transition: all 330ms;
+  width: 60%;
 }
 .menuPlat:hover .menuPlatTitle {
-  width: 80%;
-  transition: all 330ms;
+  width: 75%;
 }
 
 /**/
