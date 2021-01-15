@@ -58,6 +58,10 @@
   animation-delay: 600ms;
 }
 
+.load4 {
+  animation-delay: 800ms;
+}
+
 .menuPlat:hover .menuPlatAnimation i {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -475,6 +479,14 @@ a {
 .footer i {
   margin-right: 10px;
   width: 14px;
+}
+
+.Contact {
+  max-width: 70px;
+}
+.Contact:hover {
+  text-decoration: underline;
+  color: #ff79da;
 }
 
 /* RESPONSIV */

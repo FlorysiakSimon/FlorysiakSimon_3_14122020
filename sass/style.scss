@@ -253,6 +253,15 @@ a {
   }
 }
 
+.Contact {
+  max-width: 70px;
+  &:hover {
+    text-decoration: underline;
+
+    color: $secondary;
+  }
+}
+
 /* RESPONSIV */
 
 @media screen and (max-width: 1250px) {
