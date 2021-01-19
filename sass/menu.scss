@@ -80,8 +80,8 @@
     margin: 1em;
     text-overflow: ellipsis;
     overflow: hidden;
-    -webkit-animation-name: fadein;
-    -webkit-animation-duration: 1s;
+    animation-name: fadein;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     &Title {
       padding: 0.5em 0em 0em 0.5em;
