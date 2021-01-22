@@ -9,6 +9,7 @@ $grey-background: #f6f6f6;
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
+  color: red;
 }
 h1,
 h3 {
@@ -23,7 +24,6 @@ a {
 
 .loader {
   animation: go_up 3s;
-  animation-fill-mode: none;
   animation-fill-mode: forwards;
   background-color: white;
   display: flex;
@@ -45,7 +45,7 @@ a {
   animation: spin 2s linear infinite;
 }
 
-/*@media screen and (max-width: 618px) { */
+//@media screen and (max-width: 618px) {
 /*HEADER*/
 .header {
   text-align: center;
@@ -115,7 +115,7 @@ a {
       position: relative;
       display: flex;
       align-items: center;
-      /* width: 80%; */
+      // width: 80%;
       width: 350px;
 
       padding: 1em;
